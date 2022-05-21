@@ -5,15 +5,15 @@ for (;;) {
 	if (value ===""|| value === null|| !isFinite(value))break;
 	array.push(+value);
 }
+array.sort((a,b)=> a-b)
+	alert array;
 
 let sum = 0;
 for (let arr of array){
 	sum +=arr;
 }
-alert (sum);
-
-array.sort((a,b)=> a-b)
-	return array;	
+return (sum);
+	
 }
 
 alert (sumInput() );
